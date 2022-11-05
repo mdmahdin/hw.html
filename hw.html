@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cc8560047c.js" crossorigin="anonymous"></script>
+    <style>
+        @keyframes sliding {
+            0%{
+                background-color: rgb(72, 0, 255);
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 70px;
+            }
+            50%{
+                background-color: deeppink;
+                top: 0px;
+            }
+            75%{
+                top: 70px;
+            }
+            100%{
+                background-color: orangered;
+                top: 0;
+                left: 630px;
+            }
+        }
+
+        .field{
+          border: 1px solid black;
+          width: 700px;
+          height: 150px;
+          background-color: chartreuse;
+       
+        }
+        body{
+            background-color: lightgray;
+        }
+.animation{
+    width:80px ;
+    height: 60px;
+    background-color: brown;
+    border-radius: 50%;
+    /* transition: transform 8s linear; */
+    position: relative;
+   
+}
+/* .field:hover */ .animation{ 
+    /* transform: translate(650px); */
+    animation: sliding 3s linear  infinite alternate ;
+    animation-play-state: running
+    
+    
+}
+div p{
+    position: relative;
+    left: 5px;
+    padding-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <ol>
+        <h1>block eliments</h1>
+        <li>
+            div
+        </li>
+        <li>section</li>
+        <li>head</li>
+        <li>footer</li>
+        <li>video</li>
+        <li>ul</li>
+        <li>form</li>
+    </ol>
+</div>
+    <div>
+        <h1>inline elements</h1>
+        <ol>
+            <li>p</li>
+            <li>a</li>
+            <li>input</li>
+            <li>b</li>
+            <li>sub</li>
+            <li>small</li>
+            <li>strong</li>
+        </ol>
+    </div>
+    <section>
+        <h1>semantic tag</h1>
+        <p>
+            semantic means meaningfull!it is a latest update of html . 
+            we can easily identify every part of our website by using semantic elements. it helps alot google to identify to know part of out website.and it is also very usefill for ranking our website easily.
+            </p>
+            <h3>example of semantic elements</h3>
+            <ol>
+                
+                <li>
+                    header
+                </li>
+                <li>
+                    main
+                </li>
+                <li>footer</li>
+                <li>
+                    article
+                </li>
+                <li>aside</li>
+                <li>nav</li>
+            </ol>
+        </p>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GwFR8QgqIqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay ; clipboard-write;encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls autoplay></iframe> -->
+    </section>
+    <video src="https://youtu.be/GwFR8QgqIqM" autoplay></video>
+    <a href="https://www.youtube.com/embed/GwFR8QgqIqM"></a>
+    <p> Go to my profile: <a href="https://www.facebook.com/lm.mahdin/"><i class="fa-brands fa-facebook"></i></a></p>
+    <p>Go to my channel: <a href="https://youtu.be/GwFR8QgqIqM"><i class="fa-brands fa-youtube"></i></a></p>
+    <div class="field">
+        <div class="animation">
+<p>thank you for coming</p>
+        </div>
+    </div>
+</body>
+</html>
